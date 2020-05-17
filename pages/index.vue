@@ -145,16 +145,16 @@ export default {
   components: {
     IsoToolbar,
   },
+  methods: {
+    toggleChat () {
+      window.$crisp.push(['do', 'chat:toggle']);
+    },
+  },
   head () {
     return headMeta({
       title: 'Innovative Smart Options: ICT Solutions',
       description: 'Innovative Smart Options: ICT Solutions',
     });
-  },
-  methods: {
-    toggleChat () {
-      window.$crisp.push(['do', 'chat:toggle']);
-    },
   },
 };
 </script>
