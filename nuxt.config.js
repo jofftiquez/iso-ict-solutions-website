@@ -7,7 +7,7 @@ export default {
   */
   head: {
     titleTemplate: '%s',
-    title: process.env.npm_package_name || '',
+    title: 'Sample Page',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -30,6 +30,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-media-query-mixin.js',
+    '~/plugins/is-mobile.js',
+    { src: '~plugins/crisp.js', mode: 'client' },
   ],
   /*
   ** Nuxt.js dev-modules
