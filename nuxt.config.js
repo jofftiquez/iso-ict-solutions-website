@@ -57,13 +57,13 @@ export default {
       themes: {
         // NOTE: These colors are MYCURE defaults
         light: {
-          primary: '#2e9fdf',
-          accent: '#7fad33',
-          secondary: '#616161',
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: '#ff5252',
-          success: colors.green.accent3,
+          primary: '#009688',
+          secondary: '#2196f3',
+          accent: '#ffeb3b',
+          error: '#f44336',
+          warning: '#ffc107',
+          info: '#03a9f4',
+          success: '#4caf50'
         },
         dark: {
           primary: '#2e9fdf',
