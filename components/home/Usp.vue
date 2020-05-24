@@ -32,7 +32,7 @@
                 br
                 h2.white--text.display-2 Works for you!
               v-card-text.text-center
-                v-btn(icon large).primary
+                v-btn(href="#the-company" icon large).primary
                   v-icon(style="font-size: 50px").white--text mdi-chevron-down
   //- v-container(fluid style="height: 100vh").fill-height.panel-1
     v-row(justify="center" align="center")
