@@ -60,6 +60,7 @@ export default {
     return headMeta({
       title: 'Innovative Smart Options: ICT Solutions',
       description: 'Innovative Smart Options: ICT Solutions',
+      socialBanner: require('../assets/images/usp-1.jpg'),
     });
   },
 };
