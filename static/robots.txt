@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Allow: /
+
+Sitemap: https://iso-ict-solutions.web.app/sitemap.xml
