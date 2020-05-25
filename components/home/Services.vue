@@ -39,7 +39,7 @@
           v-toolbar.mb-2
             v-toolbar-title.font-weight-black.primary--text Range of Support Services
           v-expansion-panels
-            v-expansion-panel(v-for="(item, key) in rangeOfSupportServices")
+            v-expansion-panel(v-for="(item, key) in rangeOfSupportServices" :key="key")
               v-expansion-panel-header {{item.tab}}
               v-expansion-panel-content
                 v-card(flat height="100%").grey.lighten-3
@@ -49,7 +49,7 @@
           v-toolbar.mb-2
             v-toolbar-title.font-weight-black.primary--text Range of Systems
           v-expansion-panels
-            v-expansion-panel(v-for="(item, key) in rangeOfSystems")
+            v-expansion-panel(v-for="(item, key) in rangeOfSystems" :key="key")
               v-expansion-panel-header {{item.tab}}
               v-expansion-panel-content
                 v-card(flat height="100%").grey.lighten-3
