@@ -1,6 +1,6 @@
 <template lang="pug">
   v-container(id="the-company")
-    v-row(justify="center" align="center").pa-10
+    v-row(justify="center" align="center")
       //- v-col(cols="12" md="6").text-center
       //-   img(width="100%" src="../../assets/images/the-company.jpg")
       v-col(cols="12" md="12").text-center
