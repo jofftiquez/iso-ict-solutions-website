@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-container.mb-10.pt-0
+  v-container(id="the-team").mb-10.pt-0
     v-row
       v-col.text-center
         h1(:class="{ 'display-3': !$isMobile, 'display-2': $isMobile }").display-4.font-weight-black The Team
