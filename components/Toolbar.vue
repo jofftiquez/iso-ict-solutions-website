@@ -14,19 +14,19 @@
           href="#"
           depressed
           text
-        ).ma-1 The Company
+        ).ma-1 Our Company
         v-btn(
           v-scroll-to="{ el: '#the-team', offset: scrollOffset }"
           href="#"
           depressed
           text
-        ).ma-1 The Team
+        ).ma-1 Our Team
         v-btn(
           v-scroll-to="{ el: '#services', offset: scrollOffset }"
           href="#"
           depressed
           text
-        ).ma-1 Services
+        ).ma-1 Our Services
         v-btn(@click="toggleChat" depressed color="primary").ma-1 Contact Us
       template(v-else)
         h1(v-scroll-to="{ el: '#top', offset: scrollOffset }").mr-2 Logo Here
