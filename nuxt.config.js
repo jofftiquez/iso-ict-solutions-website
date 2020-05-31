@@ -50,7 +50,7 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     ['vue-scrollto/nuxt', { duration: 300 }],
-    { src: '~plugins/ga.js', mode: 'client' },
+    // { src: '~/plugins/ga.js', mode: 'client' },
   ],
   /*
   ** vuetify module configuration
