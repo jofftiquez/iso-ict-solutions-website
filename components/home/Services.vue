@@ -12,28 +12,46 @@
               v-spacer
               v-toolbar-title.font-weight-black.primary--text Range of Support Services
               v-spacer
-            v-tabs(:vertical="!$isMobile")
-              template(v-for="item in rangeOfSupportServices")
+            v-tabs(v-model="rangeOfSupportServicesModel" :vertical="!$isMobile")
+              template(v-for="(item, index) in rangeOfSupportServices")
                 div(style="width: 300px")
-                  v-tab {{item.tab}}
-                v-tab-item.pr-2.pb-2
-                  v-card(flat height="100%").grey.lighten-3
-                    v-card-text
-                      div(v-html="item.content")
+                  div(
+                    v-ripple
+                    :style="{'padding-top': index !== 0 ? '10px' : ''}"
+                    :class="{ active: rangeOfSupportServicesModel === index }"
+                    @click="rangeOfSupportServicesModel = index"
+                  ).custom-tab-btn
+                    span(v-html="item.tab")
+              v-tabs-items(v-model="rangeOfSupportServicesModel" :vertical="!$isMobile")
+                template(v-for="(item, index) in rangeOfSupportServices")
+                  v-tab-item(:value="index").pr-2.pb-2
+                    v-card(flat height="100%").grey.lighten-3
+                      v-card-text
+                        h2(v-html="item.tab").mb-3
+                        div(v-html="item.content")
         v-col(cols="12")
           v-card(height="100%")
             v-toolbar.white
               v-spacer
               v-toolbar-title.font-weight-black.primary--text Range of Systems
               v-spacer
-            v-tabs(:vertical="!$isMobile")
-              template(v-for="item in rangeOfSystems")
+            v-tabs(v-model="rangeOfSystemsModel" :vertical="!$isMobile")
+              template(v-for="(item, index) in rangeOfSystems")
                 div(style="width: 300px")
-                  v-tab {{item.tab}}
-                v-tab-item.pr-2.pb-2
-                  v-card(flat height="100%").grey.lighten-3
-                    v-card-text
-                      div(v-html="item.content")
+                  div(
+                    v-ripple
+                    :style="{'padding-top': index !== 0 ? '10px' : ''}"
+                    :class="{ active: rangeOfSystemsModel === index }"
+                    @click="rangeOfSystemsModel = index"
+                  ).custom-tab-btn
+                    span(v-html="item.tab")
+              v-tabs-items(v-model="rangeOfSystemsModel" :vertical="!$isMobile")
+                template(v-for="(item, index) in rangeOfSystems")
+                  v-tab-item(:value="index").pr-2.pb-2
+                    v-card(flat height="100%").grey.lighten-3
+                      v-card-text
+                        h2(v-html="item.tab").mb-3
+                        div(v-html="item.content")
       v-row(justify="center" align="center" v-else)
         v-col(cols="12")
           v-toolbar.mb-2
@@ -61,11 +79,12 @@
 export default {
   data () {
     return {
+      rangeOfSupportServicesModel: 0,
+      rangeOfSystemsModel: 0,
       rangeOfSupportServices: [
         {
-          tab: 'Consultancy Services',
+          tab: 'Consultancy Services BICSI certified <br> Professionals',
           content: `
-            <b>BICSI certified Professionals</b>
             <p>
               Never start an ICT project without seeking professional advice.  Costly re-works and damaged reputation can be avoided when BICSI certified professionals thoroughly review your information and communications technology (ICT) designs. The location of the telecom room or the route of the secondary pathway may contribute to the total failure of installed communication infrastructure. The cost of professional services will be nothing when compared to required re-work costs.
             </p>
@@ -270,3 +289,21 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.custom-tab-btn {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  color: grey;
+}
+
+.custom-tab-btn.active {
+  color: #009688;
+  border-left: 3px solid #009688;
+}
+
+.custom-tab-btn:hover {
+  cursor: pointer;
+}
+</style>
