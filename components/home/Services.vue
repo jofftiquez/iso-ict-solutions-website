@@ -3,8 +3,7 @@
     v-container(id="services")
       v-row(justify="center" align="center")
         v-col(cols="12").text-center
-          h1.font-weight-black.black--text What We Do
-          h1(:class="{ 'display-3': !$isMobile, 'display-2': $isMobile }").font-weight-black.white--text Innovate. Outsource. Deliver.
+          h1(:class="{ 'display-3': !$isMobile, 'display-2': $isMobile }").display-4.white--text.font-weight-black We Deliver
       v-row(justify="center" align="center" v-if="!$isMobile")
         v-col(cols="12")
           v-card(height="100%")
