@@ -2,6 +2,11 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   mode: 'universal',
+  env: {
+    FIREBASE_TOKEN: process.env.FIREBASE_TOKEN,
+    GA_TRACKING_ID: process.env.GA_TRACKING_ID,
+    NODE_ENV: process.env.NODE_ENV,
+  },
   /*
   ** Headers of the page
   */
@@ -33,6 +38,8 @@ export default {
     '~/plugins/vue-media-query-mixin.js',
     '~/plugins/is-mobile.js',
     { src: '~plugins/crisp.js', mode: 'client' },
+    { src: '~/plugins/vue-analytics.js', mode: 'client' },
+    { src: '~/plugins/ga.js', mode: 'client' },
   ],
   /*
   ** Nuxt.js dev-modules
