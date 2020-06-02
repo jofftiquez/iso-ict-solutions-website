@@ -15,22 +15,6 @@ export default ({ title, description, socialBanner }) => {
         name: 'description',
         content: description,
       },
-      // facebook meta
-      {
-        hid: 'og:locale',
-        name: 'og:locale',
-        content: LANG,
-      },
-      {
-        hid: 'og:type',
-        name: 'og:type',
-        content: TYPE,
-      },
-      {
-        hid: 'og:url',
-        name: 'og:url',
-        content: URL,
-      },
       {
         hid: 'og:title',
         name: 'og:title',
@@ -46,12 +30,49 @@ export default ({ title, description, socialBanner }) => {
         name: 'og:description',
         content: description,
       },
+      // facebook meta
+      {
+        hid: 'locale',
+        name: 'og:locale',
+        content: LANG,
+      },
+      {
+        hid: 'type',
+        name: 'og:type',
+        content: TYPE,
+      },
+      {
+        hid: 'type',
+        name: 'og:url',
+        content: URL,
+      },
+      {
+        hid: 'type',
+        name: 'og:title',
+        content: title,
+      },
+      {
+        hid: 'type',
+        name: 'og:site_name',
+        content: SITE_NAME,
+      },
+      {
+        hid: 'type',
+        name: 'og:description',
+        content: description,
+      },
       {
         hid: 'image',
         name: 'og:image',
         content: socialBanner,
       },
       // twitter meta
+      // mobile meta
+      {
+        hid: 'apple-mobile-web-app-title',
+        name: 'apple-mobile-web-app-title',
+        content: title,
+      },
     ],
   };
 };
