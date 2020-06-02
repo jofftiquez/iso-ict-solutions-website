@@ -51,6 +51,9 @@ export default {
         {
           src: require('../../assets/images/usp-3.jpg'),
         },
+        {
+          src: require('../../assets/images/usp-4.jpg'),
+        },
       ],
     };
   },
