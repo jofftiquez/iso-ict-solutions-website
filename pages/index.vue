@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-content
+  v-content(v-if="!loading")
     iso-toolbar
     usp
     the-company
@@ -50,6 +50,14 @@ export default {
     TheCompany,
     TheTeam,
     Services,
+  },
+  data () {
+    return {
+      loading: true,
+    };
+  },
+  mounted () {
+    this.loading = false;
   },
   methods: {
     toggleChat () {
