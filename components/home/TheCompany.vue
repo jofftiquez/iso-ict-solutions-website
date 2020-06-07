@@ -4,7 +4,7 @@
       //- v-col(cols="12" md="6").text-center
       //-   img(width="100%" src="../../assets/images/the-company.jpg")
       v-col(cols="12" md="12").text-center
-        h1(:class="{ 'display-3': !$isMobile, 'display-2': $isMobile }").display-4.font-weight-black We Innovative
+        h1(:class="{ 'display-3': !$isMobile, 'display-2': $isMobile }").display-4.font-weight-black We Innovate
         h2.primary--text About Us
         br
         p.text-justify Innovative Smart Options: ICT Solutions acts as your back office and reliable business partner available 24/7 via online means. Our highly trained, certified and well-experienced professionals will work and prepare any phase or phases of your project scope. ISO: ICT Solutions helps you save time and cost using an entirely new approach.
