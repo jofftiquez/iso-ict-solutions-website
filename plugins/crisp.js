@@ -3,7 +3,7 @@ export default () => {
   window.CRISP_WEBSITE_ID = process.env.CRISP_WEBSITE_ID;
 
   (function () {
-    const d = process.browser && window.document;
+    const d = document;
     const s = d.createElement('script');
 
     s.src = 'https://client.crisp.chat/l.js';
