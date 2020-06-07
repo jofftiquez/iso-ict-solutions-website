@@ -1,15 +1,16 @@
 <template lang="pug">
-  div.primary
+  div
     v-container(id="services")
       v-row(justify="center" align="center")
         v-col(cols="12").text-center
-          h1(:class="{ 'display-3': !$isMobile, 'display-2': $isMobile }").display-4.white--text.font-weight-black We Deliver
+          h1(:class="{ 'display-3': !$isMobile, 'display-2': $isMobile }").display-4.black--text.font-weight-black We Deliver
+          h2.primary--text Our Services
       v-row(justify="center" align="center" v-if="!$isMobile")
         v-col(cols="12")
           v-card(height="100%")
             v-toolbar.white
               v-spacer
-              v-toolbar-title.font-weight-black.primary--text Range of Support Services
+              v-toolbar-title.font-weight-black.primary--text Support Requirements
               v-spacer
             v-tabs(v-model="rangeOfSupportServicesModel" :vertical="!$isMobile")
               template(v-for="(item, index) in rangeOfSupportServices")
@@ -32,7 +33,7 @@
           v-card(height="100%")
             v-toolbar.white
               v-spacer
-              v-toolbar-title.font-weight-black.primary--text Range of Systems
+              v-toolbar-title.font-weight-black.primary--text Systems
               v-spacer
             v-tabs(v-model="rangeOfSystemsModel" :vertical="!$isMobile")
               template(v-for="(item, index) in rangeOfSystems")
@@ -57,7 +58,7 @@
             v-toolbar-title.font-weight-black.primary--text Range of Support Services
           v-expansion-panels
             v-expansion-panel(v-for="(item, key) in rangeOfSupportServices" :key="key")
-              v-expansion-panel-header {{item.tab}}
+              v-expansion-panel-header(v-html="item.tab")
               v-expansion-panel-content
                 v-card(flat height="100%").grey.lighten-3
                   v-card-text
@@ -67,7 +68,7 @@
             v-toolbar-title.font-weight-black.primary--text Range of Systems
           v-expansion-panels
             v-expansion-panel(v-for="(item, key) in rangeOfSystems" :key="key")
-              v-expansion-panel-header {{item.tab}}
+              v-expansion-panel-header(v-html="item.tab")
               v-expansion-panel-content
                 v-card(flat height="100%").grey.lighten-3
                   v-card-text
