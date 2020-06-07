@@ -12,25 +12,61 @@
             b.primary--text Sitemap
             ul.no-decoration-ul
               li
-                a(href="#the-company") The Company
+                v-btn(
+                  v-scroll-to="{ el: '#the-company', offset: scrollOffset }"
+                  rounded
+                  text
+                ).text-none The Company
               li
-                a(href="#the-team") The Team
+                v-btn(
+                  v-scroll-to="{ el: '#the-team', offset: scrollOffset }"
+                  rounded
+                  text
+                ).text-none The Team
               li
-                a(href="#services") Services
+                v-btn(
+                  v-scroll-to="{ el: '#services', offset: scrollOffset }"
+                  rounded
+                  text
+                ).text-none Services
           v-col(xs="12" md="3")
             b.primary--text Follow Us
             ul.no-decoration-ul
               li
-                a Facebook
+                v-btn(
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  rounded
+                  text
+                ).text-none Facebook
               li
-                a Twitter
+                v-btn(
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  rounded
+                  text
+                ).text-none Twitter
           v-col(xs="12" md="3")
             b.primary--text Contact Us
             ul.no-decoration-ul
-              li email@sample.com
-              li +639165008232
               li
-                a(@click="toggleChat") Live Chat
+                v-btn(
+                  rounded
+                  text
+                ).text-none email@sample.com
+              li
+                v-btn(
+                  rounded
+                  text
+                ).text-none +639165008232
+              li
+                v-btn(
+                  @click="toggleChat"
+                  rounded
+                  text
+                ).text-none Live Chat
         v-row(justify="center")
           v-col(cols="12").text-center
             p Copyright © {{new Date().getFullYear()}} #[span.font-weight-black.primary--text Innovative Smart Options: ICT Solutions]. All Rights Reserved.
@@ -55,6 +91,11 @@ export default {
     return {
       loading: true,
     };
+  },
+  computed: {
+    scrollOffset () {
+      return this.$isMobile ? -56 : -64;
+    },
   },
   mounted () {
     this.loading = false;
