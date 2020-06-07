@@ -1,3 +1,5 @@
+![Firebase Hosting](https://github.com/jofftiquez/iso-ict-solutions-website/workflows/Deploy:Prod/badge.svg?branch=master)
+
 # ISO ICT Innovative Solutions - Main Website
 
 > https://iso-ict-solutions.web.app
