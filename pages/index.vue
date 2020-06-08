@@ -9,7 +9,7 @@
       v-container
         v-row(justify="center").pa-10
           v-col(xs="12" md="3")
-            b.primary--text Sitemap
+            h3.primary--text Sitemap
             ul.no-decoration-ul
               li
                 v-btn(
@@ -30,11 +30,11 @@
                   text
                 ).text-none Services
           v-col(xs="12" md="3")
-            b.primary--text Follow Us
+            h3.primary--text Follow Us
             ul.no-decoration-ul
               li
                 v-btn(
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/IsoIctSolutions"
                   target="_blank"
                   rel="noreferrer noopener"
                   rounded
@@ -42,25 +42,20 @@
                 ).text-none Facebook
               li
                 v-btn(
-                  href="https://twitter.com"
+                  href="https://twitter.com/IsoIctSolutions"
                   target="_blank"
                   rel="noreferrer noopener"
                   rounded
                   text
                 ).text-none Twitter
           v-col(xs="12" md="3")
-            b.primary--text Contact Us
+            h3.primary--text Contact Us
             ul.no-decoration-ul
               li
                 v-btn(
                   rounded
                   text
-                ).text-none email@sample.com
-              li
-                v-btn(
-                  rounded
-                  text
-                ).text-none +639165008232
+                ).text-none iso.ict.solutions@gmail.com
               li
                 v-btn(
                   @click="toggleChat"
