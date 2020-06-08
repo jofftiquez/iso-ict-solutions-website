@@ -25,8 +25,9 @@ jobs:
         run: yarn
       - name: Run build
         env: 
-          NODE_ENV: ${{ secrets.NODE_ENV }}
+          CRISP_WEBSITE_ID: ${{ secrets.CRISP_WEBSITE_ID }}
           GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+          NODE_ENV: ${{ secrets.NODE_ENV }}
         run: yarn generate
       - name: Run deploy
         env: 
