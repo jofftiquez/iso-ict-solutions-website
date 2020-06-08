@@ -7,8 +7,8 @@
           h2.primary--text Our Services
       v-row(justify="center" align="center" v-if="!$isMobile")
         v-col(cols="12")
-          v-card(height="100%")
-            v-toolbar.white
+          v-card(height="100%" flat).service-card
+            v-toolbar.white.elevation-0
               v-spacer
               v-toolbar-title.font-weight-black.primary--text Support Requirements
               v-spacer
@@ -30,8 +30,8 @@
                         h2(v-html="item.tab").mb-3
                         div(v-html="item.content")
         v-col(cols="12")
-          v-card(height="100%")
-            v-toolbar.white
+          v-card(height="100%" flat).service-card
+            v-toolbar.white.elevation-0
               v-spacer
               v-toolbar-title.font-weight-black.primary--text Systems
               v-spacer
@@ -52,9 +52,9 @@
                       v-card-text
                         h2(v-html="item.tab").mb-3
                         div(v-html="item.content")
-      v-row(justify="center" align="center" v-else)
-        v-col(cols="12")
-          v-toolbar.mb-2
+      v-row(justify="center" align="center" v-else).ma-1
+        v-col(cols="12").mb-4.service-card
+          v-toolbar.mb-2.elevation-0
             v-toolbar-title.font-weight-black.primary--text Range of Support Services
           v-expansion-panels
             v-expansion-panel(v-for="(item, key) in rangeOfSupportServices" :key="key")
@@ -63,8 +63,8 @@
                 v-card(flat height="100%").grey.lighten-3
                   v-card-text
                     div(v-html="item.content")
-        v-col(cols="12")
-          v-toolbar.mb-2
+        v-col(cols="12").service-card
+          v-toolbar.mb-2.elevation-0
             v-toolbar-title.font-weight-black.primary--text Range of Systems
           v-expansion-panels
             v-expansion-panel(v-for="(item, key) in rangeOfSystems" :key="key")
@@ -321,5 +321,10 @@ export default {
 
 p {
   text-align: justify !important;
+}
+
+.service-card {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
 }
 </style>
