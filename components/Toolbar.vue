@@ -7,7 +7,8 @@
       elevate-on-scroll
     )
       template(v-if="!$isMobile").red
-        h1(v-scroll-to="{ el: '#top', offset: scrollOffset }").mr-2 Logo Here
+        img(height="50" src="../assets/images/Icon-256.png" v-scroll-to="{ el: '#top', offset: scrollOffset }").mr-2
+        h2(v-scroll-to="{ el: '#top', offset: scrollOffset }").mr-2 ISO: ICT Solutions
         v-spacer
         v-btn(
           v-scroll-to="{ el: '#the-company', offset: scrollOffset }"
@@ -29,7 +30,8 @@
         ).ma-1 Our Services
         v-btn(@click="toggleChat" depressed color="primary").ma-1 Contact Us
       template(v-else)
-        h1(v-scroll-to="{ el: '#top', offset: scrollOffset }").mr-2 Logo Here
+        img(height="50" src="../assets/images/Icon-256.png" v-scroll-to="{ el: '#top', offset: scrollOffset }").mr-2
+        h2(v-scroll-to="{ el: '#top', offset: scrollOffset }").mr-2 ISO: ICT Solutions
         v-spacer
         v-menu(close-on-content-click)
           template(v-slot:activator="{ on }")
