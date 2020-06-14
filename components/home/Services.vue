@@ -103,7 +103,7 @@ export default {
           tab: 'Pre-sales Preparation',
           content: `
             <p style="text-align: justify;">
-              Project BOQ is very critical in project execution. The total fiber optic cable lengths must include required slacks and allowance to facilitate termination and future moves and changes. All components must be perform as expected and fully compliant with project specifications.
+              Project BOQ is very critical in project execution. The total fiber optic cable lengths must include required slacks and allowance to facilitate termination and future moves and changes. All components must be performed as expected and fully compliant with project specifications.
             </p>
             <p style="text-align: justify;">
               All gray areas in project requirement must be appropriately raised. Project owners expect that they are dealing with professionals who squarely understood the project.

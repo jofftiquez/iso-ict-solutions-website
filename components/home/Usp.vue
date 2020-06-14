@@ -31,7 +31,7 @@
                     | ICT Solutions
                   br
                   br
-                  h2.white--text.display-2.font-weight-bold Innovative. Outsource. Deliver.
+                  h2.white--text.display-2.font-weight-bold Innovate. Outsource. Deliver.
                 v-card-text.text-center
                   v-btn(href="#" icon large v-scroll-to="{ el: '#the-company', offset: scrollOffset }").primary
                     v-icon(style="font-size: 50px").white--text mdi-chevron-down
