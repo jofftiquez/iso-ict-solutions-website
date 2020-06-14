@@ -324,7 +324,7 @@ p {
 }
 
 .service-card {
-  border: 1px solid lightgrey;
+  border: 2px solid #009688;
   border-radius: 5px;
 }
 </style>
