@@ -4,7 +4,7 @@
       cycle
       hide-delimiter-background
       show-arrows-on-hover
-      height="100vh"
+      :height="$isMobile ? 'auto' : '100vh'"
       reverse-transition="fade-transition"
       transition="fade-transition"
     )
@@ -25,14 +25,14 @@
           )
             v-col(cols="12")
               v-card(flat color="transparent")
-                v-card-text.text-center
+                v-card-text(:style="{ 'padding' : $isMobile ? '60px 5px 5px 5px' : '' }").text-center
                   h1.white--text.display-3.font-weight-black Innovative Smart Options:
                     br
                     | ICT Solutions
                   br
                   br
                   h2.white--text.display-2.font-weight-bold Innovate. Outsource. Deliver.
-                v-card-text.text-center
+                v-card-text(:style="{ 'padding-bottom' : $isMobile ? '50px' : '' }").text-center
                   v-btn(href="#" icon large v-scroll-to="{ el: '#the-company', offset: scrollOffset }").primary
                     v-icon(style="font-size: 50px").white--text mdi-chevron-down
 </template>
