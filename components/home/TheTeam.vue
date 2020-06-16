@@ -2,7 +2,7 @@
   v-container(id="the-team").mb-10.pt-0
     v-row
       v-col.text-center
-        h1(:class="{ 'display-3': !$isMobile, 'display-2': $isMobile }").display-4.font-weight-black You Outsouce
+        h1(:class="{ 'display-3': !$isMobile, 'display-2': $isMobile }").display-4.font-weight-black You Outsource
         h2.primary--text The Team
       v-carousel(
         cycle
