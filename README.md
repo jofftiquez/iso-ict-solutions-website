@@ -54,7 +54,7 @@ env: {
 },
 ```
 
-You must have a working knowledge of CI/CD. This project has an automated workflow using GitHub Actions. For more info about the workflow, see `.github/workflows/production.yml` file in the root of the project.
+You must have a working knowledge of CI/CD. This project has a continuous deployment workflow using [GitHub Actions](https://help.github.com/en/actions). For more info about the workflow, see `.github/workflows/production.yml` file in the root of the project.
 
 In `.github/workflows/production.yml` you'll see:
 ```yml
@@ -67,6 +67,6 @@ This means that any commit your push or merge to the `master` branch, the CI job
 
 Basically, what the "job" does is it deploys the new changes pulled from `master` branch to Firebase Hosting.
 
-For questions, please contact the original author at jofftiquez@gmail.com
+For questions, please contact the original author at jofftiquez@gmail.com.
 
 Cheers!
