@@ -4,6 +4,7 @@ export default {
   mode: 'universal',
   env: {
     CRISP_WEBSITE_ID: process.env.CRISP_WEBSITE_ID,
+    FIREBASE_APP_ID: process.env.FIREBASE_APP_ID,
     FIREBASE_TOKEN: process.env.FIREBASE_TOKEN,
     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
     NODE_ENV: process.env.NODE_ENV,
