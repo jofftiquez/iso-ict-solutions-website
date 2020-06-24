@@ -10,7 +10,7 @@
           v-card(height="100%" flat).service-card
             v-toolbar.white.elevation-0
               v-spacer
-              v-toolbar-title.font-weight-black.primary--text Support Requirements
+              v-toolbar-title.font-weight-black.primary--text Range of Support Services
               v-spacer
             v-tabs(v-model="rangeOfSupportServicesModel" :vertical="!$isMobile")
               template(v-for="(item, index) in rangeOfSupportServices")
@@ -33,7 +33,7 @@
           v-card(height="100%" flat).service-card
             v-toolbar.white.elevation-0
               v-spacer
-              v-toolbar-title.font-weight-black.primary--text Systems
+              v-toolbar-title.font-weight-black.primary--text Range of Systems
               v-spacer
             v-tabs(v-model="rangeOfSystemsModel" :vertical="!$isMobile")
               template(v-for="(item, index) in rangeOfSystems")
@@ -86,7 +86,7 @@ export default {
           tab: 'Consultancy Services BICSI certified <br> Professionals',
           content: `
             <p style="text-align: justify;">
-              Never start an ICT project without seeking professional advice.  Costly re-works and damaged reputation can be avoided when BICSI certified professionals thoroughly review your information and communications technology (ICT) designs. The location of the telecom room or the route of the secondary pathway may contribute to the total failure of installed communication infrastructure. The cost of professional services will be nothing when compared to required re-work costs.
+              Never start an ICT project without seeking professional advice. Costly re-works and damaged reputation can be avoided when BICSI certified professionals thoroughly review your information and communications technology (ICT) designs and projects. The location of the telecom room or the route of the secondary pathway may contribute to the total failure of installed communication infrastructure. These are common examples that hugely impact project cost and time of completion. The amount spent on professional services will be nothing when compared to cost of required re-works.
             </p>
             <p style="text-align: justify;">
               BICSI (Building Industry Consulting Service International) with headquarters location in Tampa, Florida, U.S.A. issues globally recognized credential to professionals who had passed their certification processes. These certified professionals are your partners in delivering successful world class ICT projects. ISO: ICT Solutions offers the services of:
@@ -103,10 +103,10 @@ export default {
           tab: 'Pre-sales Preparation',
           content: `
             <p style="text-align: justify;">
-              Project BOQ is very critical in project execution. The total fiber optic cable lengths must include required slacks and allowance to facilitate termination and future moves and changes. All components must be performed as expected and fully compliant with project specifications.
+              Project BOQ is very critical in project execution. The total fiber optic cable lengths must include required slacks and allowances to facilitate termination and future moves and changes. All components must perform as expected and fully compliant with project specifications.
             </p>
             <p style="text-align: justify;">
-              All gray areas in project requirement must be appropriately raised. Project owners expect that they are dealing with professionals who squarely understood the project.
+              All gray areas or insufficient information in project requirement must be appropriately raised. Project owners expect to be dealing with professionals who squarely understand the overall technical concept.
             </p>
             <p style="text-align: justify;">
               A well-documented pre-sales preparation eliminates confusions during the transfer of information to the project team. ISO: ICT Solutions prepares your:
@@ -120,13 +120,13 @@ export default {
           `,
         },
         {
-          tab: 'Design Preparation ',
+          tab: 'Design Preparation',
           content: `
             <p style="text-align: justify;">
-              Design guides installation phase. There are different layout preparations, and each serve on separately during the execution works. The shop drawings, for example, should demonstrate how project team must install the system.
+              Design layouts guide the installation phase. There are different layout preparations, and each serves separate purpose during the execution works. The shop drawings, for example, should demonstrate how project team must install the system in coordination with defined references.
             </p>
             <p style="text-align: justify;">
-              Approvals on submitted layouts will not relieve the construction team from the responsibility of improper installations.  It is therefore essential that prepared drawings are properly prepared and reviewed by certified professionals. To avoid confusion between the design and the installation team, ISO: ICT solutions makes the drawing plans for you.
+              Approvals on submitted layouts will not relieve the construction team from the responsibility of improper and sub-standard installations.  It is therefore essential that drawings are properly prepared and reviewed by certified professionals. To avoid confusion between the design and the installation teams, ISO: ICT Solutions makes the drawing plans for you.
             </p>
             <ul>
               <li>Schematic Drawings</li>
@@ -143,7 +143,7 @@ export default {
           tab: 'Documentation',
           content: `
             <p style="text-align: justify;">
-              Proper documentation seamlessly transfers information among all team players in the project. Project accomplishments, progress, challenges, resolutions and change orders will guide the overall project delivery performance evaluation and valuable references when resolving disputes. Good documentation eases the pressure when working with future project requirements with the readily available sources of information.  ISO: ICT Solutions assist documenting:
+              Proper documentation seamlessly transfers information among all team players in the project. Project accomplishments, progress, challenges, resolutions and change orders will guide the overall project delivery performance evaluation and become valuable references when resolving disputes. Good documentation eases the pressure when working with future projects because of readily available knowledge sources. ISO: ICT Solutions assists documenting:
             </p>
             <ul>
               <li>Weekly Accomplishment Reports/Project Planning</li>
@@ -179,7 +179,7 @@ export default {
           tab: 'Acceptance Phase',
           content: `
             <p style="text-align: justify;">
-              Project requirements define required submittals during the acceptance phase. The requirement maybe on project’s case to case basis, ISO: ICT Solution commits these:
+              Project requirements define required submittals during the acceptance phase. The requirement maybe on project’s case to case basis, ISO: ICT Solutions commits these:
             </p>
             <ul>
               <li>Documentation submittals</li>
@@ -192,7 +192,7 @@ export default {
           tab: 'Structured Cabling Systems',
           content: `
             <p style="text-align: justify;">
-              Globally accepted technology standards and industry’s practices guarantee the design and installation of cables to any device connected at the endpoint will work with the system’s designed active devices located inside the telecommunications or equipment room. The backbone distribution between the main and intermediate cross-connects provides the highway for information exchanges within the ICT systems.
+              Globally accepted technology standards and industry’s best practices guarantee the functionality of the design and installation of cables from the endpoint to the telecommunications or equipment room. The backbone distribution between the main and intermediate cross-connects provides the highway for information exchanges within the ICT systems.
             </p>
             <p style="text-align: justify;">
               SO: ICT Solutions work in compliance with standards, technology and security requirement, and future-proof structured cabling systems design and installations in:
@@ -231,7 +231,7 @@ export default {
           tab: 'OSP Projects',
           content: `
             <p style="text-align: justify;">
-              OSP project usually refers to inter-building backbone connectivity and its distribution. Outside plant (OSP) projects requires a number of distinct considerations as compared to the intra-building structured cabling system. Complex routes and longer cabling distances require exceptional knowledge in the design, installation and delivery of outside plant projects. ISO: ICT Solutions supports your projects requirements including:
+              OSP project usually refers to inter-building backbone connectivity and its distribution. Outside plant (OSP) projects requires several distinct considerations as compared to the intra-building structured cabling system. Complex routes and longer cabling distances require exceptional knowledge in the design, installation and delivery of outside plant projects. ISO: ICT Solutions supports your projects requirements including:
             </p>
             <ul>
               <li>Redundant and Diversified Routes</li>
@@ -244,10 +244,19 @@ export default {
           tab: 'Security Systems',
           content: `
             <p style="text-align: justify;">
-              ISO: ICT Solutions values your assets and incorporates state-of-the art solutions for your total protection.  We offer full range of services for you or your project security systems requirements from BOQ generation, review of requirements, layout preparation and even installation, testing and commissioning.
+              ISO: ICT Solutions values your assets and incorporates state-of-the art technology for your total protection.  We offer full range of services for security systems requirements from BOQ generation, review of requirements, layout preparation, installation, testing and commissioning.
             </p>
             <p style="text-align: justify;">
-              We understand that security designs varies from the gravity or exposure of threats and design and installation need to comply with the guidelines defined by the authorities having the jurisdiction. We develop solutions for:
+              High definition resolution of video footages with real-time recording and playback options in internal or external storage facilities assists security officers to monitor, investigate, and detect any event considered to be a threat to the lives and/or the property of the protected area.
+            </p>
+            <p style="text-align: justify;">
+              The plan, design and installation of camera location must achieve the optimum critical purpose as defined and required by the project whether in IP or analog CCTV Surveillance System. CCTV camera technical specifications including its associated hardware must comply with all considerations to ensure the best reliable installed surveillance system.
+            </p>
+            <p style="text-align: justify;">
+              The evolution of CCTV system functionalities advances with the present and future demands. Thermal cameras are now commonly installed in response to the challenges of Covid-19 pandemic. AI-assisted video surveillance solution empowers the system to maximize its utilization while minimizing the operating cost.
+            </p>
+            <p style="text-align: justify;">
+              We understand that security designs vary from the gravity or exposure to threats. Design and installation need to comply with the guidelines defined by the authorities having the jurisdiction. We develop solutions for:
             </p>
             <ul>
               <li>CCTV and various applications</li>
@@ -260,7 +269,7 @@ export default {
           tab: 'Public Address',
           content: `
             <p style="text-align: justify;">
-              Audible, strategic and advance solution must be incorporated in public address systems.  Either to convey information or to sound an alert, sound public address system reaches the target on point while delivering the exact action required.  ISO: ICT Solutions extends services for:
+              Audible, strategic and advance solution must be incorporated in public address systems.  Either to convey information or to sound an alert, good public address system reaches the target on point while delivering the need for the required response.  ISO: ICT Solutions extends services for:
             </p>
             <ul>
               <li>Paging System</li>
@@ -284,7 +293,7 @@ export default {
           tab: 'Fire Detection and Alarm',
           content: `
             <p style="text-align: justify;">
-              Detect and sound the alarm. ISO: ICT Solutions ensures fire detection and alarm systems earliest discovery of developing fire within the designed premises.
+              Detects and sound activates the alarm. ISO: ICT Solutions ensures fire detection and alarm systems at the earliest discovery of developing fire within the designed premises.
             </p>
             <ul>
               <li>Addressable</li>

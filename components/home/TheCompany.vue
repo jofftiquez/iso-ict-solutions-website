@@ -9,7 +9,7 @@
         br
         p.text-justify Innovative Smart Options: ICT Solutions acts as your back office and reliable business partner available 24/7 via online means. Our highly trained, certified and well-experienced professionals will work and prepare any phase or phases of your project scope. ISO: ICT Solutions helps you save time and cost using an entirely new approach.
         p.text-justify Challenging times demand innovative strategies in all aspects of activities from project pre-sales preparation, requirement review, development, deployment, monitoring, and completion to post-project services delivery.
-        p.text-justify We understand your financial and social constraints in organizing your team and we further support your commitment to a successful project hand-over.
+        p.text-justify We understand your financial and social constraints in organizing your team and we further support your commitment to a successful project hand-over. We innovate by serving to be your virtual team capable of providing full technical support to your tender and projects on hand requirements.
       //- v-col(cols="12" md="6").text-center.pa-10
       //-   img(:width="$isMobile ? '100%' : '350'" src="~/assets/images/the-company.svg")
       //- v-col(cols="12" md="6").pa-10

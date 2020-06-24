@@ -3,7 +3,7 @@
     v-row
       v-col.text-center
         h1(:class="{ 'display-3': !$isMobile, 'display-2': $isMobile }").display-4.font-weight-black You Outsource
-        h2.primary--text The Team
+        h2.primary--text Our Team
       v-carousel(
         cycle
         hide-delimiter-background
@@ -40,11 +40,11 @@ export default {
       carouselItems: [
         {
           src: require('../../assets/images/the-team-1.jpg'),
-          content: 'A group of highly experienced and technically knowledgeable professionals conceptualized the idea of supporting ICT companies who had been affected by this “new normal” business environment.',
+          content: 'A group of highly experienced and technically knowledgeable professionals conceptualized the idea of supporting ICT companies who had been affected by this “new normal” business environment. Projects across the Middle East demand strict compliance with international standards and the work experiences acquired harness the credibility of our ability to supply know-how.',
         },
         {
           src: require('../../assets/images/the-team-2.jpg'),
-          content: 'Innovative Smart Options: ICT Solutions offers help to those organizations who had downsized their teams, those on start up or even existing companies who opted to outsource the services of ICT consultants.',
+          content: 'Innovative Smart Options: ICT Solutions extends service to those organizations who had downsized their teams, those on start-up, and even existing companies who opted to outsource the services of ICT consultants.',
         },
       ],
     };
